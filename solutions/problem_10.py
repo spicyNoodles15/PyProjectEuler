@@ -7,44 +7,53 @@ The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
 
 Find the sum of all the primes below two million.
 """
-##Track Execution time##
-import time
-start = time.time()
-########################
-
+# Libraries
 import math
+import time
+
+# Track Execution time
+start = time.time()
 
 # Variables #
-num = 2_000_000
+NUMBER = 2_000_000
 
-def check_for_prime(num):
+def check_for_prime(l_num):
+    """
+    Returns True/False after testing input for prime
+    """
     # Check for divisible by 2 and 3 so we can ignore those multiples in the for loop
-    if num <= 1: 
+    if l_num <= 1:
         return False
-    if num == 2:
+    if l_num == 2:
         return True
-    if num > 2 and num % 2 == 0:
+    if l_num > 2 and l_num % 2 == 0:
         return False
-    
+   
     #Now loop through the remaining range using only odd numbers
-    for z in range(3,math.floor(math.sqrt(num))+1,2):
-            if num%z==0: 
-                return False
+    for z in range(3,math.floor(math.sqrt(l_num))+1,2):
+        if l_num%z==0:
+            return False
     return True
 
-def add_primes(num):
+def add_primes(l_num):
+    """
+    Add prime numbers
+    """
     total = 0
-    if num == 2: return 2
-    if num == 3: return 5
-    if num == 7: return 12
-    if num > 7:
-        for y in range(1,num+1):
-            if check_for_prime(y): 
+    if l_num == 2:
+        return 2
+    if l_num == 3:
+        return 5
+    if l_num == 7:
+        return 12
+    if l_num > 7:
+        for y in range(1,l_num+1):
+            if check_for_prime(y):
                 total += y
     return total
 
 # Print results of calculations #
-print("Summation of primes: " + str(add_primes(num)))
+print("Summation of primes: " + str(add_primes(NUMBER)))
 
 # Print Execution Time
 end = time.time()
