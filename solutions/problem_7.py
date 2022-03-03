@@ -47,7 +47,7 @@ def count_primes(num):
     while count < num:
         if check_for_prime(y):
             count += 1
-            y += 1       
+            y += 1
         else:
             y += 1
     return y-1
