@@ -46,7 +46,6 @@ def add_primes(num):
 # Print results of calculations #
 print("Summation of primes: " + str(add_primes(num)))
 
-##Print Execution Time##
+# Print Execution Time
 end = time.time()
-print(f"Execution time: {end-start}s")
-########################
+print(f"Execution time: {(end-start):.3f}s")

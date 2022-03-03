@@ -42,7 +42,6 @@ def largest_prime_factor(num):
 # Print function result#
 print("Largest prime: " + str(largest_prime_factor(600851475143)))
 
-##Print Execution Time##
+# Print Execution Time
 end = time.time()
-print(f"Execution time: {end-start}s")
-########################
+print(f"Execution time: {(end-start):.3f}s")

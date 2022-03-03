@@ -1,9 +1,10 @@
 """
-###PROBLEM 1###
-# https://projecteuler.net/problem=1 #
-###Multiples of 3 or 5####
+PROBLEM 1
+https://projecteuler.net/problem=1
+Multiples of 3 or 5
 
 """
+
 # Track Execution time
 import time
 start = time.time()
@@ -16,4 +17,4 @@ print(total)
 
 # Print Execution Time
 end = time.time()
-print(f"Execution time: {end-start}s")
+print(f"Execution time: {(end-start):.3f}s")

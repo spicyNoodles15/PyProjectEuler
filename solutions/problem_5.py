@@ -27,7 +27,6 @@ def smallest_multiple(num):
 
 print("Smallest multiple: " + str(smallest_multiple(max_divisor)))
 
-##Print Execution Time##
+# Print Execution Time
 end = time.time()
-print(f"Execution time: {end-start}s")
-########################
+print(f"Execution time: {(end-start):.3f}s")

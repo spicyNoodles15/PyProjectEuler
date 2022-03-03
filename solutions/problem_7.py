@@ -47,7 +47,6 @@ number = 10001
 result = str(count_primes(number))
 print(f'{number} prime: {result}')
 
-##Print Execution Time##
+# Print Execution Time
 end = time.time()
-print(f"Execution time: {end-start}s")
-########################
+print(f"Execution time: {(end-start):.3f}s")

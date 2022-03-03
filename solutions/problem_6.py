@@ -27,7 +27,6 @@ def square_of_sum(num):
 # Print results of calculations #
 print("Sum Square Difference: " + str(square_of_sum(num)-sum_of_squares(num)))
 
-##Print Execution Time##
+# Print Execution Time
 end = time.time()
-print(f"Execution time: {end-start}s")
-########################
+print(f"Execution time: {(end-start):.3f}s")
