@@ -5,7 +5,7 @@ Multiples of 3 or 5
 """
 import time
 
-def solution(num):
+def solution():
     '''
     Solution 1 function
     '''
@@ -15,8 +15,9 @@ def solution(num):
 
     # Variables
     total = 0
+    RANGE = 1000
 
-    for x in range(1, num):
+    for x in range(1, RANGE):
         if x%3==0 or x%5==0:
             total+=x
 

@@ -4,7 +4,10 @@ Simple gui to interact with Project Euler solutions
 import os
 from pathlib import Path
 import PySimpleGUI as sg
-from solutions.problem_1 import *
+
+#global vars
+sol = 0
+text = ''
 
 def get_files():
     """
@@ -55,13 +58,15 @@ while True:
         for num in solution_files:
             if num is values['-INPUT-']:
                 # dynamically call solution file
-                # method_to_call = getattr(solutions.problem_1, 'sol_1_text')
-                # result = getattr(solutions.problem_1, 'bar')()
+                exec('import solutions.problem_' + values['-INPUT-'])
+                exec('sol = solutions.problem_' + values['-INPUT-'] + '.solution()', globals())
+                exec('text = solutions.problem_' + values['-INPUT-'] + '.sol_text()', globals())
 
                 # update text based on which problem was selected
                 window['-OUTPUT-'].update('Problem ' + values['-INPUT-'])
-                window['-PROBTEXT-'].update('Result of text method call')
-                window['-SOLUTION-'].update('Result of solution method call')
+                window['-PROBTEXT-'].update(text)
+                window['-SOLUTION-'].update(sol)
+                break
             else:
                 window['-OUTPUT-'].update("Problem Hasn't been Solved!")
 window.close()
