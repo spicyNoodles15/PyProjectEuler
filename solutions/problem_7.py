@@ -12,11 +12,24 @@ What is the 10,001st prime number?
 import math
 import time
 
-# Track Execution time
-start = time.time()
-
 # Variables
 NUMBER = 10001
+
+def solution():
+    '''
+    Solution 7
+    '''
+
+    # Track Execution time
+    start = time.time()
+    # Print function result#
+    # print(f'{NUMBER} prime: {str(count_primes(NUMBER))}')
+
+    # Print Execution Time
+    end = time.time()
+    print(f"Execution time: {(end-start):.3f}s")
+
+    return count_primes(NUMBER)
 
 def check_for_prime(num):
     """
@@ -52,9 +65,13 @@ def count_primes(num):
             y += 1
     return y-1
 
-# Print function result#
-print(f'{NUMBER} prime: {str(count_primes(NUMBER))}')
+def sol_text():
+    '''
+    Text of problem 7
+    '''
+    return '''10001st prime:
+By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, 
+we can see that the 6th prime is 13.
 
-# Print Execution Time
-end = time.time()
-print(f"Execution time: {(end-start):.3f}s")
+What is the 10 001st prime number?
+'''

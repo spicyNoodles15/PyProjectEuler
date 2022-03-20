@@ -11,11 +11,25 @@ Find the sum of all the primes below two million.
 import math
 import time
 
-# Track Execution time
-start = time.time()
-
 # Variables #
 NUMBER = 2_000_000
+
+def solution():
+    '''
+    Solution 10
+    '''
+
+    # Track Execution time
+    start = time.time()
+
+    # Print results of calculations #
+    # print("Summation of primes: " + str(add_primes(NUMBER)))
+
+    # Print Execution Time
+    end = time.time()
+    print(f"Execution time: {(end-start):.3f}s")
+
+    return add_primes(NUMBER)
 
 def check_for_prime(l_num):
     """
@@ -52,9 +66,13 @@ def add_primes(l_num):
                 total += y
     return total
 
-# Print results of calculations #
-print("Summation of primes: " + str(add_primes(NUMBER)))
+def sol_text():
+    '''
+    Text of problem 10
+    '''
+    return '''Summation of primes:
 
-# Print Execution Time
-end = time.time()
-print(f"Execution time: {(end-start):.3f}s")
+The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+
+Find the sum of all the primes below two million.
+'''
