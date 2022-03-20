@@ -37,7 +37,7 @@ sg.theme('DarkBlue 17')   # Add a touch of color
 
 # All the stuff inside window.
 layout = [[sg.Text("Enter a Problem Number:", font=textfont)],
-          [sg.Input(size=(20,1), key='-INPUT-',)],
+          [sg.Input(size=(20,4), key='-INPUT-',)],
           [sg.Text(size=(40,1), key='-OUTPUT-', justification='center', font=probfont)],
           [sg.Text(size=(60,12), key='-PROBTEXT-', justification='left', font=textfont)],
           [sg.Text(size=(40,1), key='-ANSTEXT-', justification='center', font=probfont)],
@@ -64,14 +64,14 @@ while True:
         solution_files = get_files()
         # check all solution file numbers to see if we have a solution for the requested problem
         for num in solution_files:
-            if num is values['-INPUT-']:
+            if num == values['-INPUT-']:
                 # dynamically call solution file
                 exec('import solutions.problem_' + values['-INPUT-'])             
                 exec('text = solutions.problem_' + values['-INPUT-'] + '.sol_text()', globals())
 
                 # update text based on which problem was selected
                 window['-OUTPUT-'].update('Problem ' + values['-INPUT-'])
-                window['-PROBTEXT-'].update(text)
+                window['-PROBTEXT-'].update(text)        
 
                 # only display the solution if the answer button has been pressed
                 if event == 'See Answer':
