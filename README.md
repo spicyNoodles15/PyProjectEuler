@@ -28,4 +28,4 @@ These are my personal solutions to the Project Euler problems
 
 Added a simple gui (PySimpleGUI) to display each problem and answer if I've solved it using Python
 
-![gui](images/gui.jpg)
+![gui](images/gui.JPG)
