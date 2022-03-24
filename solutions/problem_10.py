@@ -20,14 +20,14 @@ def solution():
     '''
 
     # Track Execution time
-    start = time.time()
+    # start = time.time()
 
     # Print results of calculations #
     # print("Summation of primes: " + str(add_primes(NUMBER)))
 
     # Print Execution Time
-    end = time.time()
-    print(f"Execution time: {(end-start):.3f}s")
+    # end = time.time()
+    # print(f"Execution time: {(end-start):.3f}s")
 
     return add_primes(NUMBER)
 

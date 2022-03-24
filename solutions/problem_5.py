@@ -24,13 +24,13 @@ def solution():
     '''
 
     # Track Execution time
-    start = time.time()
+    # start = time.time()
 
     # print("Smallest multiple: " + str(smallest_multiple(MAX_DIVISOR)))
 
     # Print Execution Time
-    end = time.time()
-    print(f"Execution time: {(end-start):.3f}s")
+    # end = time.time()
+    # print(f"Execution time: {(end-start):.3f}s")
 
     return smallest_multiple(MAX_DIVISOR)
 
