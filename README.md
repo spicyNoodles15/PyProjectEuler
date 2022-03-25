@@ -21,6 +21,21 @@ These are my personal solutions to the Project Euler problems
 | Problem 8 | Unsolved    | ??       |
 | Problem 9 | Unsolved    | ??       |
 | [Problem 10](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_10.py) | Solved    | 6.702s   |
+| Problem 11 | Unsolved    | ??       |
+| Problem 12 | Unsolved    | ??       |
+| Problem 13 | Unsolved    | ??       |
+| Problem 14 | Unsolved    | ??       |
+| Problem 15 | Unsolved    | ??       |
+| Problem 16 | Unsolved    | ??       |
+| Problem 17 | Unsolved    | ??       |
+| Problem 18 | Unsolved    | ??       |
+| Problem 19 | Unsolved    | ??       |
+| Problem 20 | Unsolved    | ??       |
+| Problem 21 | Unsolved    | ??       |
+| Problem 22 | Unsolved    | ??       |
+| Problem 23 | Unsolved    | ??       |
+| Problem 24 | Unsolved    | ??       |
+| [Problem 25](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_25.py) | Solved    | 0.033s   |
 |--------------|-----------|------------|
 
 ## GUI
