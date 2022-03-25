@@ -23,7 +23,6 @@ These are my personal solutions to the Project Euler problems
 | [Problem 10](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_10.py) | Solved    | 6.702s   |
 |--------------|-----------|------------|
 
-
 ## GUI
 
 Added a simple gui (PySimpleGUI) to display each problem and answer if I've solved it using Python
