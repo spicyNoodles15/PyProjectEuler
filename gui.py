@@ -33,12 +33,12 @@ probfont = ('Courier New', 16, 'underline')
 textfont = ('Courier New', 12,)
 soltext = ('Courier New', 16)
 
-sg.theme('DarkBlue 17')   # Add a touch of color
+sg.theme('DarkGrey13')   # Add a touch of color
 
 # All the stuff inside window.
 layout = [[sg.Text("Enter a Problem Number:", font=textfont)],
           [sg.Input(size=(20,4), key='-INPUT-',)],
-          [sg.Text(size=(40,1), key='-OUTPUT-', justification='center', font=probfont)],
+          [sg.Text(size=(40,1), key='-OUTPUT-', justification='center', font=probfont,),],
           [sg.Text(size=(60,12), key='-PROBTEXT-', justification='left', font=textfont)],
           [sg.Text(size=(40,1), key='-ANSTEXT-', justification='center', font=probfont)],
           [sg.Text(size=(40,1), key='-SOLUTION-', justification='center', font=soltext)],
@@ -71,7 +71,7 @@ while True:
 
                 # update text based on which problem was selected
                 window['-OUTPUT-'].update('Problem ' + values['-INPUT-'])
-                window['-PROBTEXT-'].update(text)        
+                window['-PROBTEXT-'].update(text)     
 
                 # only display the solution if the answer button has been pressed
                 if event == 'See Answer':

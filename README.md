@@ -14,7 +14,7 @@ These are my personal solutions to the Project Euler problems
 | [Problem 1](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_1.py) | Solved      | .001s    |
 | [Problem 2](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_2.py) | Solved      | .001s    |
 | [Problem 3](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_3.py) | Solved      | .096s    |
-| Problem 4 | Unsolved    | ??       |
+| [Problem 4](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_4.py) | Solved      | .286s   |
 | [Problem 5](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_5.py) | Solved      | 93.892s  |
 | [Problem 6](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_6.py) | Solved      | .001s    |
 | [Problem 7](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_7.py) | Solved      | .143s    |
