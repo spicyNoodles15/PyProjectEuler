@@ -30,7 +30,7 @@ These are my personal solutions to the Project Euler problems
 | [Problem 13](https://projecteuler.net/problem=13) | Problem 13 | Unsolved    | ??       |
 | [Problem 14](https://projecteuler.net/problem=14) | Problem 14 | Unsolved    | ??       |
 | [Problem 15](https://projecteuler.net/problem=15) | Problem 15 | Unsolved    | ??       |
-| [Problem 16](https://projecteuler.net/problem=16) | Problem 16 | Unsolved    | ??       |
+| [Problem 16](https://projecteuler.net/problem=16) | [Solution](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_16.py) | Solved    | .001s       |
 | [Problem 17](https://projecteuler.net/problem=17) | Problem 17 | Unsolved    | ??       |
 | [Problem 18](https://projecteuler.net/problem=18) | Problem 18 | Unsolved    | ??       |
 | [Problem 19](https://projecteuler.net/problem=19) | Problem 19 | Unsolved    | ??       |
