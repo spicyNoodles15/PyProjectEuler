@@ -24,8 +24,13 @@ def solution():
             if c > b:
                 if (a+b+c == RANGE) and c.is_integer():
                     # finally determine the product
-                    print(f'Answer: {(a*b*c)}, a={a},b={b},c={c}')
-                    return (a*b*c)
+                    # print(f'Answer: {(a*b*c)}, a={a},b={b},c={c}')
+
+                    # # Print Execution Time
+                    # end = time.time()
+
+                    # print(f"Execution time: {(end-start):.3f}s")
+                    return int((a*b*c))
 
     # Print Execution Time
     end = time.time()
