@@ -23,7 +23,7 @@ These are my personal solutions to the Project Euler problems
 | [Problem 6](https://projecteuler.net/problem=6) | [Solution](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_6.py) | Solved      | .001s    |
 | [Problem 7](https://projecteuler.net/problem=7) | [Solution](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_7.py) | Solved      | .143s    |
 | [Problem 8](https://projecteuler.net/problem=8) | [Solution](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_8.py) | Solved      | .552s    |
-| [Problem 9](https://projecteuler.net/problem=9) | [Solution](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_9.py) | Unsolved    | .079s     |
+| [Problem 9](https://projecteuler.net/problem=9) | [Solution](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_9.py) | Solved      | .079s     |
 | [Problem 10](https://projecteuler.net/problem=10) | [Solution](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_10.py) | Solved    | 6.702s   |
 | [Problem 11](https://projecteuler.net/problem=11) | Problem 11 | Unsolved    | ??       |
 | [Problem 12](https://projecteuler.net/problem=12) | Problem 12 | Unsolved    | ??       |
