@@ -39,7 +39,7 @@ These are my personal solutions to the Project Euler problems
 | [Problem 22](https://projecteuler.net/problem=22) | Problem 22 | Unsolved    | ??       |
 | [Problem 23](https://projecteuler.net/problem=23) | Problem 23 | Unsolved    | ??       |
 | [Problem 24](https://projecteuler.net/problem=24) | Problem 24 | Unsolved    | ??       |
-| [Problem 25](https://projecteuler.net/problem=25) | [Problem 25](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_25.py) | Solved    | 0.033s   |
+| [Problem 25](https://projecteuler.net/problem=25) | [Solution](https://github.com/spicyNoodles15/PyProjectEuler/blob/main/solutions/problem_25.py) | Solved    | 0.033s   |
 |--------------|-----------|-----------|------------|
 
 ## GUI

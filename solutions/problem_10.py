@@ -10,6 +10,7 @@ Find the sum of all the primes below two million.
 # Libraries
 import math
 import time
+import os, sys
 
 # Variables #
 NUMBER = 2_000_000
@@ -42,7 +43,7 @@ def check_for_prime(l_num):
         return True
     if l_num > 2 and l_num % 2 == 0:
         return False
- 
+
     #Now loop through the remaining range using only odd numbers
     for z in range(3,math.floor(math.sqrt(l_num))+1,2):
         if l_num%z==0:
