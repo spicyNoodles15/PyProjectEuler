@@ -27,8 +27,17 @@ def get_files():
                 files.append((Path(entry).stem).split("problem_",1)[1])
     return files
 
-# GUI Construction
+def clear_gui(window):
+    """
+    Clear the GUI elements
+    """
+    window['-OUTPUT-'].update('')
+    window['-PROBTEXT-'].update('')
+    window['-ANSTEXT-'].update('')
+    window['-SOLUTION-'].update('')
+    window.refresh()
 
+# GUI Construction
 probfont = ('Courier New', 16, 'underline')
 textfont = ('Courier New', 12,)
 soltext = ('Courier New', 16)
@@ -55,26 +64,29 @@ while True:
         break
     elif event == 'See Answer' or 'See Problem':
         # first clear the previous iteration of the GUI
-        window['-OUTPUT-'].update('')
-        window['-PROBTEXT-'].update('')
-        window['-ANSTEXT-'].update('')
-        window['-SOLUTION-'].update('')
+        clear_gui(window)
 
         # grab all solution filenames
         solution_files = get_files()
+
         # check all solution file numbers to see if we have a solution for the requested problem
         for num in solution_files:
-            if num == values['-INPUT-']:
+            if num == values['-INPUT-']:       
                 # dynamically call solution file
                 exec('import solutions.problem_' + values['-INPUT-'])             
                 exec('text = solutions.problem_' + values['-INPUT-'] + '.sol_text()', globals())
 
                 # update text based on which problem was selected
                 window['-OUTPUT-'].update('Problem ' + values['-INPUT-'])
-                window['-PROBTEXT-'].update(text)     
-
+                window['-PROBTEXT-'].update(text)
+                
                 # only display the solution if the answer button has been pressed
                 if event == 'See Answer':
+                    # first update the GUI to show loading text in case of a long load time
+                    window['-SOLUTION-'].update('Calculating...')
+                    window.refresh()
+
+                    # then call solution file to display answer
                     exec('sol = solutions.problem_' + values['-INPUT-'] + '.solution()', globals())
                     window['-ANSTEXT-'].update("Answer:")
                     window['-SOLUTION-'].update(sol)
